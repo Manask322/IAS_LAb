@@ -1,0 +1,17 @@
+{{res}}
+<br>
+{% for ele in res %}
+    Input String : {{ ele.0.0 }}<br>
+    
+    Intermediate results:<br>
+    <br>
+    {{ele.2}}
+    <br>
+    <!-- {{ele.2.0}} -->
+    <br>
+    {% for i in l %}
+        {{i}}
+        <br>
+        {{ ele.2.i }}
+    {% endfor %}
+{%endfor%}
